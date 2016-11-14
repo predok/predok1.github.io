@@ -1,0 +1,85 @@
+#tv-top {display:block; width: 814px; height: 545px;  margin:0; padding:0; margin-left: auto; margin-right: auto;
+background:url(/i/dis/tv-bg.jpg) no-repeat 0 0; overflow:visible !important; position:relative; }
+
+#myContent {width: 814px; height: 450px; margin-left: auto; margin-right: auto; color: black;}
+
+#channel-tabs {width: 814px; height: 30px; margin-left: auto; margin-right: auto; position:relative;}
+
+#channel-tabs ul, #channel-tabs ul li { margin:0; padding:0; list-style:none; display:block;}
+#channel-tabs ul {position:absolute; right:0; bottom:0; }
+#channel-tabs ul li {float: left; position:relative;}
+#channel-tabs li.tab-little {width: 111px; height: 30px; display:block; background:url(/i/dis/insert-little.png) no-repeat 0 bottom;} /*24*/
+#channel-tabs li.tab-big {width: 140px; height: 30px; display:block; background:url(/i/dis/insert-big.png) no-repeat 0 bottom;}
+
+#channel-tabs li a {color: #FFF; text-decoration:none; text-align:center;  font-size: 14px;}
+#channel-tabs li a:hover {text-decoration:underline;}
+#channel-tabs li.tab-little a { display:block; width: 111px; height: 18px; padding-top: 10px;}
+#channel-tabs li.tab-big a { display:block; width: 140px; height: 19px; padding-top: 9px;}
+
+/*СПИСОК КАНАЛОВ*/
+#tvHeightGuarantator {display:block; width: 749px; height: 31px;}
+#tvContent {display:block; width: 825px;  margin:0 auto; overflow-x:hidden;}
+/*#tvContent ul, #tvContent li {display:block; padding:0; margin: 0; list-style:none;position:relative;}
+#tvContent ul {margin-left: 105px; padding-top: 32px; height: 345px;}
+#tvContent li { float:left; width: 252px; height: 81px; padding-bottom: 34px; margin-right: 31px; background:url(/i/dis/tv-channel.png) no-repeat 0 0; text-align:left;
+}
+#tvContent li a, #tvContent li a:hover {width: 252px; height: 81px; display:block; position:relative;  color: #FFF; font-weight:bold; font-size: 20px; text-decoration:none; z-index:1;}
+
+#tvContent li img {display:block; position:absolute; left:0; top:0; z-index:2;}
+#tvContent li span {padding-left: 100px; padding-top: 29px; display:block;}
+#tvContent li span.ch-name {display:block; width: 81px; height: 51px; left:0; top:0; position:absolute; font-size: 16px; padding:0; z-index:3;
+padding-top: 30px; text-align:center;}*/
+
+div#mainChannelList, div#mainChannelList div { display:block; padding:0; margin:0; list-style:none; text-align:left;}
+div#mainChannelList {width: 875px;  margin: 0;}
+div#mainChannelList div {width: 252px; height: 81px; float: left;background:url(/i/dis/tv-channel.png) no-repeat 0 0; margin: 0px 30px 2px 0;}
+div#mainChannelList a.chA {display:block;width: 252px; height: 81px; color: #FFF;font-size: 20px; text-decoration:none; line-height: 81px; font-weight:bold;}
+div#mainChannelList a div.chImg {width: 81px; height:81px; float:left; margin-right: 20px; position:relative; }
+div#mainChannelList a div.chImg span {line-height: 81px; display:block; position:absolute; left:0;top:0;font-size: 16px; text-align:center; width: 81px;}
+
+.channelListInfo {width: 406px; height:202px;background:url(/i/dis/ch-info.png) no-repeat 0 0; overflow:hidden; position:absolute;display:none; /*--Hides by default--*/ z-index:10000;}
+.channelListInfo h1 {font-size: 14px; font-weight:normal; display:block; text-align: center; margin-left: 236px; margin-top: 20px; width: 160px; color: #FFF;}
+.channelListInfo div {margin-left: 240px; text-align:left;width: 150px; color: #aaa8a7; font-size: 11px;}
+.channelListInfo div p {margin-bottom: 10px;}
+.channelListInfo div.chInfoPhoto {width: 202px; height: 152px; display:block; position:absolute; left: 23px; top: 23px; margin:0; padding:0; z-index: 4;}
+.channelListInfo a.chInfoMenu {display:block; font-size: 12px; color: #aaa8a7; text-decoration:underline; margin-top: 5px; padding-left: -5px; width: 150px; height:auto; position:relative;}
+.channelListInfo a.chInfoMenu:hover {text-decoration:none;}
+
+.channelInfoBlock {min-height: 200px; padding-left: 50px; color: #191919; font-size: 90%; padding-right:50px;}
+.channelInfoBlock h2 {color: #3399ff; text-transform: uppercase; font-size: 18px; font-weight:normal;}
+.channelInfoBlock h1 {color: #3399ff; text-transform: uppercase; font-size: 18px; font-weight:normal;}
+
+
+
+
+
+/*Инфо о канале*/
+div.channel-info {width: 406px; height:202px;  left: 80px; top: 60px; position:absolute; background:url(/i/dis/ch-info.png) no-repeat 0 0;z-index: 15;color: #e6e6e6; display:none; visibility:hidden;
+overflow:hidden; z-index: 10;}
+div.channel-info h1 {font-size: 14px; font-weight:normal; display:block; text-align: center; margin-left: 236px; margin-top: 20px; width: 160px;}
+div.channel-info div {margin-left: 240px; text-align:left;width: 150px; color: #aaa8a7; font-size: 11px;}
+div.channel-info div p {margin-bottom: 10px;}
+div.channel-info div.channel-photo {width: 202px; height: 152px; display:block; position:absolute; left: 23px; top: 23px; margin:0; padding:0; z-index: 4;}
+div.channel-info span.channel-span {display:block; position:absolute; z-index:10; left:0; top:0;width: 406px; height:202px;}
+#tvContent li:hover div.channel-info, #tvContent li.over div.channel-info {display:block; visibility:visible;}
+#tvContent  div.channel-info a.channel-menu {display:block; font-size: 12px; color: #aaa8a7; text-decoration:underline; margin-top: 5px;
+border-top: 1px solid #FFF; padding-left: -5px; width: 150px;}
+#tvContent  div.channel-info a.channel-menu:hover {text-decoration:none;}
+/*Подменю*/
+div#channel-submenu { position:absolute; right:0px; top:30px; width: 111px;
+display:none; visibility:hidden; z-index: 100;}
+div#channel-submenu2 { position:absolute; right:-140px; top:30px; width: 280px;
+display:none; visibility:hidden; z-index: 100;}
+
+#channel-tabs li.tab-little:hover div#channel-submenu, #channel-tabs li.over div#channel-submenu  {display:block; visibility:visible;}
+#channel-tabs li.tab-big:hover div#channel-submenu2, #channel-tabs li.over div#channel-submenu2  {display:block; visibility:visible;}
+
+div#channel-submenu ul, div#channel-submenu li,div#channel-submenu2 ul, div#channel-submenu2 li {display:block; list-style:none; float:none;
+position:relative; left: auto; right: auto; background:#07a2d5; width: 111px;}
+div#channel-submenu2 ul, div#channel-submenu2 li  {width: 280px;}
+div#channel-submenu li,div#channel-submenu2 li {height: 27px; text-align:left;}
+div#channel-submenu li a,div#channel-submenu2 li a {display:block; height: 20px; width: 129px; text-align:left; padding: 5px;}
+
+div#channel-submenu2 td, div#channel-submenu2 td a {color: #FFF; font-size: 11px; }
+div#channel-submenu2 td {height: 27px; line-height: 11px;}
+div#channel-submenu2 table {margin-left: 10px; height: 27px;}
